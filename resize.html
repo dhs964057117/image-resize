@@ -3,25 +3,29 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Free Online Image Resizer - Resize by Pixels & Percentage | CutImage</title>
-  <meta name="description" content="Resize images online for free. Scale by exact pixel width/height or percentage with aspect ratio lock and high quality resampling. 100% private, zero uploads."/>
-  <meta name="keywords" content="image resizer, resize image online, change image dimensions, scale picture, bulk image resizer, free online photo resizer, client-side resizer"/>
+  <title>Free Image Resizer - Resize Images Online | CutImage</title>
+  <meta name="description" content="Resize images online by dimensions or percentage while maintaining aspect ratio and quality. Free client-side image resizer for JPG, PNG, and WebP."/>
+  <meta name="keywords" content="image resizer, resize image, resize photos online, change image dimensions, scale image, resize png, resize jpg"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://imageresize.dev/resize.html"/>
+
+  <!-- Alternate hreflangs -->
+  <link rel="alternate" hreflang="en" href="https://imageresize.dev/resize.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://imageresize.dev/resize.html"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://imageresize.dev/resize.html"/>
-  <meta property="og:title" content="Free Online Image Resizer - High Precision Scaling | CutImage"/>
-  <meta property="og:description" content="Bulk resize images by percentage or pixel dimension with studio-grade Lanczos resampling."/>
-  <meta property="og:image" content="https://imageresize.dev/images/resize-illustration.svg"/>
+  <meta property="og:title" content="Free Image Resizer - CutImage"/>
+  <meta property="og:description" content="Bulk resize images by percentage or pixel dimensions with high-quality resampling."/>
+  <meta property="og:image" content="https://imageresize.dev/images/hero-illustration.svg"/>
   <meta property="og:site_name" content="CutImage"/>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Free Online Image Resizer | CutImage"/>
-  <meta name="twitter:description" content="Scale and resize images without losing clarity. 100% private in-browser tool."/>
-  <meta name="twitter:image" content="https://imageresize.dev/images/resize-illustration.svg"/>
+  <meta name="twitter:title" content="Free Image Resizer - CutImage"/>
+  <meta name="twitter:description" content="Precise dimension and percentage resizing in your browser without quality loss."/>
+  <meta name="twitter:image" content="https://imageresize.dev/images/hero-illustration.svg"/>
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.svg" type="image/svg+xml"/>
@@ -35,22 +39,21 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 
-  <!-- Structured Data -->
+  <!-- WebApplication Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "CutImage Precision Resizer",
+    "name": "CutImage Image Resizer",
     "url": "https://imageresize.dev/resize.html",
-    "description": "Resize photos and graphics by exact pixel dimensions or percentage scaling with aspect ratio locking.",
     "applicationCategory": "MultimediaApplication",
     "operatingSystem": "All",
-    "browserRequirements": "Requires JavaScript",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
-    }
+    },
+    "description": "Studio-grade client-side image resizing and resampling tool."
   }
   </script>
 </head>
@@ -60,30 +63,24 @@
     <header class="w-full top-0 sticky bg-surface-bright border-b border-outline-variant z-50 safe-area-top">
       <nav class="flex justify-between items-center h-20 px-margin-x-sm md:px-margin-x max-w-container-max mx-auto">
         <div class="flex items-center gap-stack-lg">
-          <a class="font-bold text-[24px] leading-[32px] shrink-0 text-primary flex items-center gap-2" href="index.html">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-              <rect width="32" height="32" rx="8" fill="#3525cd"/>
-              <rect x="6" y="6" width="20" height="20" rx="3" stroke="#ffffff" stroke-width="2"/>
-              <circle cx="11.5" cy="11.5" r="2" fill="#ffffff"/>
-              <polyline points="26 20 20 14 8 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            CutImage
-          </a>
+          <a class="font-bold text-[24px] leading-[32px] shrink-0 text-primary" title="CutImage - Home" href="index.html">CutImage</a>
           <div class="hidden md:flex items-center gap-8">
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="compress.html">Compress</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="convert.html">Convert</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="crop.html">Crop</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-primary border-b-2 border-primary pb-1" href="resize.html">Resize</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="favicon.html">Favicon</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="trace.html">Trace</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="faq.html">FAQ</a>
+            <a title="Compress images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="compress.html">Compress</a>
+            <a title="Convert images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="convert.html">Convert</a>
+            <a title="Crop images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="crop.html">Crop</a>
+            <a title="Resize images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-primary border-b-2 border-primary pb-1" href="resize.html">Resize</a>
+            <a title="Favicon images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="favicon.html">Favicon</a>
+            <a title="Trace images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="trace.html">Trace</a>
+            <a title="FAQ images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="faq.html">FAQ</a>
           </div>
         </div>
         <div class="flex items-center gap-4">
-          <a class="bg-primary text-on-primary px-6 py-3 rounded-lg text-[14px] font-medium tracking-[0.7px] leading-[20px] hover:bg-primary-container transition-all shadow-sm" href="compress.html">Get Started</a>
+          <a class="bg-primary text-on-primary px-6 py-3 rounded-lg text-[14px] font-medium tracking-[0.7px] leading-[20px] hover:bg-primary-container transition-all" title="Get Started - Compress Images Online Free" href="compress.html">Get Started</a>
           <button class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" aria-label="Open menu" aria-expanded="false">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
           </button>
         </div>
@@ -92,95 +89,72 @@
 
     <!-- Main Content -->
     <main class="flex-1">
-      <div class="flex flex-col items-center gap-12 pb-section-padding pt-16 md:pt-20">
-        <!-- Title -->
-        <div class="flex flex-col gap-3 items-center max-w-container-max px-margin-x-sm md:px-margin-x w-full text-center">
-          <h1 class="text-[36px] md:text-[48px] font-bold text-[#1b1b24] tracking-[-0.96px] leading-[44px] md:leading-[56px]">
-            Resize Images
-          </h1>
-          <div class="max-w-[672px]">
-            <p class="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-[#464555]">
-              Resize images by exact pixel width and height or percentage with high-quality resampling and aspect ratio lock.
-            </p>
-          </div>
+      <div class="flex flex-col items-center gap-16 pb-20 pt-32">
+        <div class="flex flex-col gap-4 items-center max-w-[1280px] px-4 md:px-8 w-full">
+          <div class="mb-2"><span class="inline-block py-1 px-3 bg-primary-fixed text-primary text-[14px] font-medium leading-[20px] rounded-full">Image Optimization</span></div>
+          <h1 class="text-[48px] font-bold text-[#1b1b24] tracking-[-0.96px] leading-[56px] text-center">Resize Image</h1>
+          <div class="max-w-[672px] text-center"><p class="text-[18px] leading-[28px] text-[#464555]">Bulk resize images by percentage or pixel dimension with high-quality resampling.</p></div>
         </div>
 
-        <!-- Dropzone Container -->
-        <div class="w-full max-w-container-max px-margin-x-sm md:px-margin-x">
-          <div class="relative group min-h-[260px] md:min-h-[300px] border-2 border-dashed border-outline-variant rounded-2xl flex flex-col items-center justify-center bg-surface-container-lowest hover:border-primary hover:bg-surface-container-low transition-all cursor-pointer shadow-sm p-8">
+        <div class="w-full max-w-[1280px] px-4 md:px-8">
+          <div class="relative group h-[240px] md:h-[320px] border-2 border-dashed border-outline-variant rounded-xl flex flex-col items-center justify-center bg-surface-container-lowest hover:border-primary hover:bg-surface-container-low transition-all cursor-pointer">
             <div class="text-center z-10 space-y-4">
               <div class="w-16 h-16 bg-primary-fixed text-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span class="material-symbols-outlined text-[36px]">photo_size_select_large</span>
+                <span class="material-symbols-outlined scale-150">upload</span>
               </div>
-              <h2 class="text-[22px] md:text-[24px] font-semibold leading-[32px]">Drop images here to resize</h2>
-              <p class="text-[15px] leading-[24px] text-on-surface-variant">or click to browse from your device</p>
+              <h3 class="text-[24px] font-semibold leading-[32px]">Drop images here</h3>
+              <p class="text-[16px] leading-[24px] text-on-surface-variant">or click to browse from your device</p>
               <input type="file" id="resize-upload" accept="image/*" class="hidden"/>
-              <label for="resize-upload" class="inline-block bg-primary text-on-primary px-8 py-3 rounded-xl text-[14px] font-medium tracking-[0.7px] cursor-pointer hover:bg-primary-container transition-colors shadow-sm">
-                Choose Image
-              </label>
-              <div class="text-[12px] text-outline pt-2">Supports PNG, JPG, WEBP · Up to 50MB per file</div>
+              <label for="resize-upload" class="inline-block mt-4 text-[14px] font-medium tracking-[0.7px] leading-[20px] text-outline cursor-pointer">Supports PNG, JPG, WEBP · Up to 50MB per file</label>
             </div>
           </div>
         </div>
 
-        <!-- Mid-Content Ad Placement -->
-        <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x py-4">
-          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-1 font-semibold">Advertisement</div>
-          <div class="min-h-[250px] bg-surface-container-low/60 border border-outline-variant/40 rounded-xl flex items-center justify-center overflow-hidden">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                 data-ad-slot="2345678901"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-          </div>
-        </div>
-
-        <!-- Features Grid -->
-        <section class="w-full max-w-container-max px-margin-x-sm md:px-margin-x">
-          <h2 class="text-[26px] md:text-[30px] font-bold text-on-surface leading-[36px] text-center mb-8">Studio-Grade Resampling Precision</h2>
+        <!-- Features -->
+        <div class="w-full max-w-[1280px] px-4 md:px-8">
+          <h2 class="text-[24px] font-semibold text-on-surface leading-[32px] text-center mb-8">Resize with Studio-Grade Precision</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant hover:shadow-lg transition-all duration-300">
-              <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">high_quality</span></div>
-              <h3 class="text-[20px] font-bold leading-[28px] mb-3">Lanczos Resampling</h3>
-              <p class="text-[15px] leading-[22px] text-on-surface-variant">High-order interpolation algorithms prevent blurriness when downsizing and maintain sharp edges.</p>
+            <div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all duration-300">
+              <div class="w-12 h-12 bg-primary-fixed text-primary rounded-full flex items-center justify-center mb-6"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">high_quality</span></div>
+              <h4 class="text-[20px] font-semibold leading-[28px] mb-3">High Quality</h4>
+              <p class="text-[16px] leading-[24px] text-on-surface-variant">Advanced Lanczos resampling algorithms ensure your images remain crisp and clear with preserved sharp edges.</p>
             </div>
-            <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant hover:shadow-lg transition-all duration-300">
-              <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">aspect_ratio</span></div>
-              <h3 class="text-[20px] font-bold leading-[28px] mb-3">Aspect Ratio Lock</h3>
-              <p class="text-[15px] leading-[22px] text-on-surface-variant">Prevent image distortion. When changing width, height automatically recalculates according to the original proportions.</p>
+            <div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all duration-300">
+              <div class="w-12 h-12 bg-primary-fixed text-primary rounded-full flex items-center justify-center mb-6"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">layers</span></div>
+              <h4 class="text-[20px] font-semibold leading-[28px] mb-3">Bulk Actions</h4>
+              <p class="text-[16px] leading-[24px] text-on-surface-variant">Process high-resolution files simultaneously with multi-threaded performance right inside your web browser.</p>
             </div>
-            <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant hover:shadow-lg transition-all duration-300">
-              <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">lock</span></div>
-              <h3 class="text-[20px] font-bold leading-[28px] mb-3">100% In-Browser Privacy</h3>
-              <p class="text-[15px] leading-[22px] text-on-surface-variant">Your photos are processed client-side. Nothing is transmitted over the internet or logged on any server.</p>
+            <div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant hover:shadow-xl transition-all duration-300">
+              <div class="w-12 h-12 bg-primary-fixed text-primary rounded-full flex items-center justify-center mb-6"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">shield</span></div>
+              <h4 class="text-[20px] font-semibold leading-[28px] mb-3">Private &amp; Secure</h4>
+              <p class="text-[16px] leading-[24px] text-on-surface-variant">Your files never leave your computer. All processing happens 100% client-side for total privacy assurance.</p>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!-- Illustration & Educational Section -->
-        <section class="w-full max-w-container-max px-margin-x-sm md:px-margin-x">
-          <div class="flex flex-col md:flex-row items-center gap-12 bg-surface-container-lowest border border-outline-variant rounded-2xl p-8 md:p-12">
+        <!-- Detail Section -->
+        <div class="w-full max-w-[1280px] px-4 md:px-8">
+          <div class="flex flex-col md:flex-row items-center gap-16">
             <div class="w-full md:w-1/2 space-y-6">
-              <h2 class="text-[26px] md:text-[30px] font-bold leading-[36px]">Why Resizing Properly Matters for Web Performance</h2>
-              <p class="text-[15px] leading-[24px] text-on-surface-variant">
-                Serving oversized photos is the #1 cause of slow websites and poor Core Web Vitals scores. Scaling high-resolution camera photos (often 4000px+ wide) down to your exact website layout requirements cuts bandwidth usage by 80% and drastically speeds up page loading.
-              </p>
-              <ul class="space-y-3">
-                <li class="flex items-center gap-3 text-[15px] text-on-surface"><span class="material-symbols-outlined text-primary">check_circle</span>Pass Google PageSpeed and Core Web Vitals audits</li>
-                <li class="flex items-center gap-3 text-[15px] text-on-surface"><span class="material-symbols-outlined text-primary">check_circle</span>Maintain transparent alpha channels for PNG and WebP</li>
-                <li class="flex items-center gap-3 text-[15px] text-on-surface"><span class="material-symbols-outlined text-primary">check_circle</span>Instant preview of dimensions and expected file sizes</li>
+              <h2 class="text-[30px] font-semibold leading-[38px] tracking-[-0.3px]">Professional Resampling</h2>
+              <p class="text-[18px] leading-[28px] text-on-surface-variant">Whether you are preparing social media assets or high-resolution print files, CutImage uses professional-grade interpolation to preserve edge detail and color accuracy.</p>
+              <ul class="space-y-4">
+                <li class="flex items-center gap-3 text-[16px] leading-[24px]"><span class="material-symbols-outlined text-primary">check_circle</span>Preserve metadata (EXIF)</li>
+                <li class="flex items-center gap-3 text-[16px] leading-[24px]"><span class="material-symbols-outlined text-primary">check_circle</span>Maintain transparent backgrounds</li>
+                <li class="flex items-center gap-3 text-[16px] leading-[24px]"><span class="material-symbols-outlined text-primary">check_circle</span>Instant real-time preview</li>
               </ul>
             </div>
-            <div class="w-full md:w-1/2 flex items-center justify-center">
-              <img src="images/resize-illustration.svg" alt="Resize illustration" class="max-w-[380px] w-full h-auto rounded-xl"/>
+            <div class="w-full md:w-1/2 relative">
+              <div class="aspect-square rounded-2xl overflow-hidden border border-outline-variant shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 bg-surface-container-high flex items-center justify-center p-8">
+                <img src="images/resize-illustration.svg" alt="Resize illustration" class="w-full h-full object-contain"/>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!-- Bottom Ad Placement -->
-        <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x pt-2">
-          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-1 font-semibold">Advertisement</div>
+        <!-- Ad Placement -->
+        <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x py-8">
+          <div class="text-[11px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-2 font-semibold">Advertisement</div>
           <div class="min-h-[90px] bg-surface-container-low/60 border border-outline-variant/40 rounded-xl flex items-center justify-center overflow-hidden">
             <ins class="adsbygoogle"
                  style="display:block"
@@ -195,43 +169,49 @@
 
     <!-- Footer -->
     <footer class="w-full border-t border-outline-variant bg-surface-container-lowest">
-      <div class="px-margin-x-sm md:px-margin-x max-w-container-max mx-auto pt-section-padding-sm md:pt-section-padding pb-12">
+      <div class="px-margin-x-sm md:px-margin-x max-w-container-max mx-auto pt-section-padding-sm md:pt-section-padding pb-12 md:pb-16">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div class="md:col-span-5 flex flex-col gap-4">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
               </div>
               <span class="font-bold text-[22px] leading-[28px] text-primary">CutImage</span>
             </div>
-            <p class="text-[14px] leading-[22px] text-on-surface-variant max-w-[400px]">
-              Local, secure, ultra-fast image processing suite. All algorithms execute locally in your web browser — your photos never touch any server.
-            </p>
+            <p class="text-[14px] leading-[22px] text-on-surface-variant max-w-[400px]">Local, secure, fast image processing. All tools run entirely in your browser — nothing is uploaded to servers.</p>
+            <div class="flex items-center gap-3 pt-1">
+              <span class="inline-flex items-center gap-1.5 text-[12px] text-on-surface-variant/60">
+                <span class="w-2 h-2 rounded-full bg-success inline-block"></span>All systems online
+              </span>
+            </div>
           </div>
           <div class="md:col-span-4 flex flex-col gap-4">
-            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Image Tools</span>
+            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Tools</span>
             <nav class="grid grid-cols-2 gap-x-4 gap-y-2.5">
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="compress.html">Compress</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="convert.html">Convert</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="crop.html">Crop</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="resize.html">Resize</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="favicon.html">Favicon</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="trace.html">Trace (SVG)</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="faq.html">FAQ</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="compress.html">Compress</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="convert.html">Convert</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="crop.html">Crop</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="resize.html">Resize</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="favicon.html">Favicon</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="trace.html">Trace</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="faq.html">FAQ</a>
             </nav>
           </div>
           <div class="md:col-span-3 flex flex-col gap-4">
-            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Legal & Compliance</span>
+            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Legal</span>
             <nav class="flex flex-col gap-2.5">
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="terms.html">Terms of Service</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="faq.html#privacy">Security Guarantee</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="privacy.html">Privacy</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="terms.html">Terms</a>
             </nav>
           </div>
         </div>
         <div class="mt-10 md:mt-12 pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4">
           <p class="text-[13px] leading-[18px] text-on-surface-variant/60">&copy; 2026 CutImage. All rights reserved.</p>
-          <p class="text-[12px] leading-[16px] text-on-surface-variant/50">High-Precision Image Rescaling Engine</p>
+          <p class="text-[12px] leading-[16px] text-on-surface-variant/40">Made with &hearts; for the web</p>
         </div>
       </div>
     </footer>

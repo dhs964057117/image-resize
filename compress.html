@@ -3,24 +3,28 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Free Image Compressor Online - Reduce JPEG, PNG & WebP | CutImage</title>
-  <meta name="description" content="Compress images online for free without losing quality. Reduce JPEG, PNG, and WebP file sizes up to 90% directly in your browser. 100% private, no server uploads."/>
-  <meta name="keywords" content="image compressor, compress jpeg, compress png, compress webp, reduce image size, online photo compressor, lossless image compression, private image compressor"/>
+  <title>Free Image Compressor - JPEG, PNG & WebP | CutImage</title>
+  <meta name="description" content="Compress images online for free. Reduce file size up to 90% without losing quality. Fast, private, client-side batch compression."/>
+  <meta name="keywords" content="image compressor, compress image, reduce image size, compress jpeg, compress png, compress webp, online image optimizer"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://imageresize.dev/compress.html"/>
+
+  <!-- Alternate hreflangs -->
+  <link rel="alternate" hreflang="en" href="https://imageresize.dev/compress.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://imageresize.dev/compress.html"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://imageresize.dev/compress.html"/>
-  <meta property="og:title" content="Free Online Image Compressor - Reduce Image File Size | CutImage"/>
-  <meta property="og:description" content="Reduce image file size without losing quality. Client-side browser compression for JPEG, PNG, and WebP."/>
+  <meta property="og:title" content="Free Image Compressor - CutImage"/>
+  <meta property="og:description" content="Compress JPEG, PNG, and WebP images directly in your browser with zero server uploads."/>
   <meta property="og:image" content="https://imageresize.dev/images/hero-illustration.svg"/>
   <meta property="og:site_name" content="CutImage"/>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Free Image Compressor Online | CutImage"/>
-  <meta name="twitter:description" content="Fast, private, client-side image compression with side-by-side comparison slider."/>
+  <meta name="twitter:title" content="Free Image Compressor - CutImage"/>
+  <meta name="twitter:description" content="Reduce file size up to 90% without losing quality. 100% private in-browser compression."/>
   <meta name="twitter:image" content="https://imageresize.dev/images/hero-illustration.svg"/>
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
@@ -35,22 +39,21 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 
-  <!-- Structured Data -->
+  <!-- WebApplication Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "CutImage Image Compressor",
     "url": "https://imageresize.dev/compress.html",
-    "description": "Free client-side image compressor. Shrink JPEG, PNG and WebP images with custom quality slider and interactive preview.",
     "applicationCategory": "MultimediaApplication",
     "operatingSystem": "All",
-    "browserRequirements": "Requires JavaScript",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
-    }
+    },
+    "description": "High-efficiency client-side image compression tool for JPEG, PNG, and WebP."
   }
   </script>
 
@@ -70,144 +73,149 @@
     <header class="w-full top-0 sticky bg-surface-bright border-b border-outline-variant z-50 safe-area-top">
       <nav class="flex justify-between items-center h-20 px-margin-x-sm md:px-margin-x max-w-container-max mx-auto">
         <div class="flex items-center gap-stack-lg">
-          <a class="font-bold text-[24px] leading-[32px] shrink-0 text-primary flex items-center gap-2" href="index.html">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-              <rect width="32" height="32" rx="8" fill="#3525cd"/>
-              <rect x="6" y="6" width="20" height="20" rx="3" stroke="#ffffff" stroke-width="2"/>
-              <circle cx="11.5" cy="11.5" r="2" fill="#ffffff"/>
-              <polyline points="26 20 20 14 8 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            CutImage
-          </a>
+          <a class="font-bold text-[24px] leading-[32px] shrink-0 text-primary" title="CutImage - Home" href="index.html">CutImage</a>
           <div class="hidden md:flex items-center gap-8">
-            <a class="text-[16px] leading-[24px] transition-colors text-primary border-b-2 border-primary pb-1" href="compress.html">Compress</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="convert.html">Convert</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="crop.html">Crop</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="resize.html">Resize</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="favicon.html">Favicon</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="trace.html">Trace</a>
-            <a class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="faq.html">FAQ</a>
+            <a title="Compress images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-primary border-b-2 border-primary pb-1" href="compress.html">Compress</a>
+            <a title="Convert images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="convert.html">Convert</a>
+            <a title="Crop images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="crop.html">Crop</a>
+            <a title="Resize images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="resize.html">Resize</a>
+            <a title="Favicon images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="favicon.html">Favicon</a>
+            <a title="Trace images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="trace.html">Trace</a>
+            <a title="FAQ images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="faq.html">FAQ</a>
           </div>
         </div>
         <div class="flex items-center gap-4">
-          <a class="bg-primary text-on-primary px-6 py-3 rounded-lg text-[14px] font-medium tracking-[0.7px] leading-[20px] hover:bg-primary-container transition-all shadow-sm" href="compress.html">Get Started</a>
+          <a class="bg-primary text-on-primary px-6 py-3 rounded-lg text-[14px] font-medium tracking-[0.7px] leading-[20px] hover:bg-primary-container transition-all" title="Get Started - Compress Images Online Free" href="compress.html">Get Started</a>
           <button class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" aria-label="Open menu" aria-expanded="false">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
           </button>
         </div>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main class="flex-1">
-      <div class="flex flex-col items-stretch max-w-container-max mx-auto pt-16 md:pt-20 pb-section-padding gap-12">
+      <div class="flex flex-col items-stretch max-w-container-max mx-auto pt-28 md:pt-32 pb-section-padding gap-12 md:gap-16">
         <!-- Title -->
         <div class="flex flex-col gap-2 items-center px-margin-x-sm md:px-margin-x">
-          <h1 class="text-[36px] md:text-[48px] font-bold text-[#1b1b24] tracking-[-0.96px] leading-[44px] md:leading-[56px] text-center">Compress Image Online</h1>
-          <div class="max-w-[672px]"><p class="text-[16px] leading-[24px] text-[#464555] text-center">Reduce file size without sacrificing visual quality. 100% private, ultra-fast, in-browser compression.</p></div>
+          <h1 class="text-[48px] font-bold text-[#1b1b24] tracking-[-0.96px] leading-[56px] text-center">Compress Image</h1>
+          <div class="max-w-[672px]"><p class="text-[16px] leading-[24px] text-[#464555] text-center">Reduce file size without sacrificing quality. Private, fast, browser-based.</p></div>
         </div>
 
-        <!-- Upload Zone -->
+        <!-- Upload -->
         <div class="flex flex-col gap-6 px-margin-x-sm md:px-margin-x">
-          <div id="dropzone" class="backdrop-blur-[6px] bg-[rgba(255,255,255,0.8)] border-2 border-dashed border-[#c7c4d8] flex flex-col items-center justify-center min-h-[220px] px-[34px] py-[38.5px] rounded-[16px] cursor-pointer transition-all hover:border-[#3525cd] hover:bg-[rgba(53,37,205,0.03)] shadow-sm">
-            <div class="bg-[#e2dfff] rounded-full flex items-center justify-center w-[54px] h-[54px] mb-4">
-              <svg width="24" height="18" viewBox="0 0 22 16" fill="none"><path d="M21 10.75V13.5C21 14.3284 20.3284 15 19.5 15H2.5C1.67157 15 1 14.3284 1 13.5V10.75" stroke="#3525cd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 5.25L11 1L6 5.25" stroke="#3525cd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 1V11" stroke="#3525cd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div id="dropzone" class="backdrop-blur-[6px] bg-[rgba(255,255,255,0.8)] border-2 border-dashed border-[#c7c4d8] flex flex-col items-center justify-center min-h-[200px] px-[34px] py-[38.5px] rounded-[12px] cursor-pointer transition-all hover:border-[#3525cd] hover:bg-[rgba(53,37,205,0.03)]">
+            <div class="bg-[#e2dfff] rounded-full flex items-center justify-center w-[48px] h-[48px] mb-4">
+              <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M21 10.75V13.5C21 14.3284 20.3284 15 19.5 15H2.5C1.67157 15 1 14.3284 1 13.5V10.75" stroke="#3525cd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 5.25L11 1L6 5.25" stroke="#3525cd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 1V11" stroke="#3525cd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h2 class="text-[22px] md:text-[24px] font-semibold text-[#1b1b24] leading-[32px] mb-2">Drag &amp; Drop Images Here</h2>
+            <h2 class="text-[24px] font-semibold text-[#1b1b24] leading-[32px] mb-2">Drag &amp; Drop Images</h2>
             <div class="flex gap-2 items-center justify-center mb-0">
-              <p class="text-[14px] leading-[20px] text-[#777587]">JPEG, PNG, WebP up to 50MB</p>
+              <div class="bg-[#f0ecf9] rounded-[4px] px-2 py-0.5"><span class="text-[10px] font-bold text-[#464555] uppercase leading-[15px]">JPEG</span></div>
+              <div class="bg-[#f0ecf9] rounded-[4px] px-2 py-0.5"><span class="text-[10px] font-bold text-[#464555] uppercase leading-[15px]">PNG</span></div>
+              <div class="bg-[#f0ecf9] rounded-[4px] px-2 py-0.5"><span class="text-[10px] font-bold text-[#464555] uppercase leading-[15px]">WEBP</span></div>
+              <div class="bg-[#f0ecf9] rounded-[4px] px-2 py-0.5"><span class="text-[10px] font-bold text-[#464555] uppercase leading-[15px]">AVIF</span></div>
             </div>
-            <input type="file" id="file-input" multiple accept="image/jpeg,image/png,image/webp,image/avif,image/gif" class="hidden"/>
-            <label for="file-input" class="mt-4 inline-block bg-primary text-on-primary px-6 py-2.5 rounded-lg text-[14px] font-medium cursor-pointer hover:bg-primary-container transition-colors shadow-sm">Select Files</label>
+            <input type="file" id="file-upload" accept="image/*" multiple class="hidden"/>
+            <label for="file-upload" class="mt-6 bg-[#3525cd] text-white text-[14px] font-medium tracking-[0.7px] px-8 py-3 rounded-lg cursor-pointer hover:bg-[#2e1fb0] transition-colors inline-block">Choose File</label>
           </div>
 
-          <!-- Controls Bar -->
-          <div id="controls-bar" class="flex flex-col gap-4 hidden">
-            <div class="flex flex-wrap justify-between items-center gap-4">
-              <div class="flex items-center gap-3">
-                <span class="text-[14px] font-bold text-[#1b1b24]" id="file-count">0 files loaded</span>
+          <!-- Settings -->
+          <div id="settings-panel" class="backdrop-blur-[6px] bg-[rgba(255,255,255,0.8)] border border-[#c7c4d8] rounded-[12px] p-[25px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] relative z-10 hidden">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="bg-[#e2dfff] rounded-full w-8 h-8 flex items-center justify-center"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M8 1.5L9.8 5.17L14 5.7L11 8.62L11.6 12.8L8 10.92L4.4 12.8L5 8.62L2 5.7L6.2 5.17L8 1.5Z" stroke="#3525cd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4 class="text-[20px] font-normal text-[#1b1b24] leading-[30px]">Settings</h4>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6 items-start">
+              <div class="flex-[2] flex flex-col gap-6 w-full">
+                <!-- Quality -->
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-[14px] font-medium text-[#1b1b24] tracking-[0.7px] leading-[20px]">Quality</span>
+                    <div class="bg-[#e2dfff] rounded-full px-3 py-1"><span id="q-val" class="text-[14px] font-medium text-[#3525cd]">80%</span></div>
+                  </div>
+                  <div class="bg-[#e0e3e5] h-2 rounded-full relative">
+                    <input type="range" id="q-range" min="1" max="100" value="80" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"/>
+                    <div id="q-thumb" class="absolute top-1/2 -translate-y-1/2 w-[18px] h-[18px] bg-[#3525cd] rounded-full shadow pointer-events-none" style="left:calc(80% - 9px)"></div>
+                    <div id="q-fill" class="h-full bg-[#3525cd] rounded-full" style="width:80%"></div>
+                  </div>
+                </div>
+                <!-- Format -->
+                <div>
+                  <span class="text-[14px] font-medium text-[#1b1b24] tracking-[0.7px] leading-[20px] block mb-2">Output Format</span>
+                  <div class="relative" id="fmt-wrap">
+                    <button id="fmt-btn" class="bg-[#f5f2ff] border border-[#c7c4d8] rounded-lg px-[17px] py-[11px] w-full flex items-center justify-between text-left">
+                      <span id="fmt-label" class="text-[14px] font-medium text-[#1b1b24]">WebP (Highly Optimized)</span>
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="#1b1b24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div id="fmt-menu" class="absolute top-full left-0 right-0 mt-1 bg-white border border-[#c7c4d8] rounded-lg shadow-lg z-20 overflow-hidden hidden"></div>
+                  </div>
+                </div>
+                <!-- Target Size -->
+                <div>
+                  <span class="text-[14px] font-medium text-[#1b1b24] tracking-[0.7px] leading-[20px] block mb-2">Target Size (KB) <span class="text-[12px] text-[#777587]">(optional)</span></span>
+                  <input type="number" id="target-kb" min="1" placeholder="e.g. 100" class="bg-[#f5f2ff] border border-[#c7c4d8] rounded-lg px-[17px] py-[11px] w-full text-[14px] font-medium text-[#1b1b24] placeholder:text-[#777587] focus:outline-none focus:border-[#3525cd]"/>
+                </div>
               </div>
-              <div class="flex gap-3 items-center">
-                <button id="btn-clearall" class="border border-[#c7c4d8] rounded-lg flex items-center gap-2 px-[17px] py-[9px] text-[14px] font-medium text-[#1b1b24] hover:bg-gray-50 transition-colors">Clear All</button>
-                <button id="btn-dlall" class="bg-[#3525cd] rounded-lg flex items-center gap-2 py-[9px] px-6 text-[14px] font-medium text-white tracking-[0.7px] leading-[20px] hover:bg-[#2e1fb0] transition-colors hidden">Download All</button>
+              <div class="flex-1 flex flex-col gap-3 justify-end md:pt-[36px]">
+                <button id="btn-compress" class="bg-[#3525cd] flex items-center justify-center gap-2 py-[14px] rounded-[12px] w-full text-white text-[14px] font-medium tracking-[0.7px] leading-[20px] disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#2e1fb0] transition-colors shadow">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M11.5 7.75L8 11.5L4.5 7.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 2V11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Compress All
+                </button>
+                <button id="btn-clear" class="bg-[#eae6f4] flex items-center justify-center gap-2 py-[14px] rounded-[12px] w-full text-[#1b1b24] text-[14px] font-medium tracking-[0.7px] leading-[20px] hover:bg-[#ddd8eb] transition-colors">Clear All</button>
               </div>
             </div>
-            <div id="stats" class="flex items-center gap-4 hidden bg-surface-container-low p-4 rounded-xl">
-              <div class="flex flex-col"><span class="text-[10px] font-bold text-[#777587] tracking-[1px] uppercase leading-[15px]">Compressed</span><span id="st-comp" class="text-[14px] font-bold text-[#3525cd] leading-[18px]">0 KB</span></div>
-              <div class="flex flex-col items-end"><span class="text-[10px] font-bold text-[#777587] tracking-[1px] uppercase leading-[15px]">Saved</span><span id="st-save" class="text-[14px] font-bold text-[#3525cd] leading-[18px]">0%</span></div>
-              <div class="flex flex-col ml-auto"><span class="text-[10px] font-bold text-[#777587] tracking-[1px] uppercase leading-[15px]">Original</span><span id="st-orig" class="text-[14px] font-normal text-[#464555] leading-[18px]">0 KB</span></div>
-            </div>
-          </div>
-
-          <!-- Cards Grid -->
-          <div id="cards-wrap" class="flex flex-col gap-6 pt-2 hidden">
-            <div id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
           </div>
         </div>
 
-        <!-- Mid-Content Ad Placement -->
-        <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x py-4">
-          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-1 font-semibold">Advertisement</div>
-          <div class="min-h-[250px] bg-surface-container-low/60 border border-outline-variant/40 rounded-xl flex items-center justify-center overflow-hidden">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                 data-ad-slot="2345678901"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+        <!-- Results -->
+        <div id="results-hdr" class="flex flex-col gap-6 px-margin-x-sm md:px-margin-x pt-2 hidden">
+          <div class="flex items-center justify-between pb-4 border-b border-[#c7c4d8]">
+            <h2 class="text-[24px] font-semibold text-[#1b1b24] leading-[32px]">Compressed Images</h2>
+            <div class="flex gap-3 items-center">
+              <button id="btn-clearall" class="border border-[#c7c4d8] rounded-lg flex items-center gap-2 px-[17px] py-[9px] text-[14px] font-medium text-[#1b1b24] hover:bg-gray-50 transition-colors">Clear All</button>
+              <button id="btn-dlall" class="bg-[#3525cd] rounded-lg flex items-center gap-2 py-[9px] px-6 text-[14px] font-medium text-white tracking-[0.7px] leading-[20px] hover:bg-[#2e1fb0] transition-colors hidden">Download All</button>
+            </div>
           </div>
+          <div id="stats" class="flex items-center gap-4 hidden">
+            <div class="flex flex-col"><span class="text-[10px] font-bold text-[#777587] tracking-[1px] uppercase leading-[15px]">Compressed</span><span id="st-comp" class="text-[12px] font-bold text-[#3525cd] leading-[18px]">0 KB</span></div>
+            <div class="flex flex-col items-end"><span class="text-[10px] font-bold text-[#777587] tracking-[1px] uppercase leading-[15px]">Saved</span><span id="st-save" class="text-[12px] font-bold text-[#3525cd] leading-[18px]">0%</span></div>
+            <div class="flex flex-col ml-auto"><span class="text-[10px] font-bold text-[#777587] tracking-[1px] uppercase leading-[15px]">Original</span><span id="st-orig" class="text-[12px] font-normal text-[#464555] leading-[18px]">0 KB</span></div>
+          </div>
+        </div>
+
+        <div id="cards-wrap" class="flex flex-col gap-6 px-margin-x-sm md:px-margin-x pt-2 hidden">
+          <div id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         </div>
 
         <!-- Features -->
-        <section class="flex flex-col gap-8 max-w-[1216px] px-margin-x-sm md:px-margin-x w-full mx-auto">
-          <h2 class="text-[26px] md:text-[30px] font-bold text-[#1b1b24] leading-[36px] text-center">Built for Speed, Privacy &amp; Quality</h2>
+        <section class="flex flex-col gap-8 max-w-[1216px] px-margin-x-sm md:px-margin-x w-full">
+          <h2 class="text-[24px] font-semibold text-[#1b1b24] leading-[32px] text-center">Built for Speed, Privacy &amp; Quality</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
             <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant hover:shadow-lg transition-all duration-300">
-              <div class="bg-secondary-container rounded-xl w-12 h-12 flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">lock</span></div>
-              <h3 class="text-[20px] font-bold leading-[28px] mb-3">Private &amp; Secure</h3>
-              <p class="text-[15px] leading-[22px] text-on-surface-variant">Your files never leave your device. All compression takes place locally in your web browser.</p>
+              <div class="bg-secondary-container rounded-full w-12 h-12 flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">lock</span></div>
+              <h3 class="text-[24px] font-semibold leading-[32px] mb-4">Private &amp; Secure</h3>
+              <p class="text-[16px] leading-[24px] text-on-surface-variant">Your files never leave your device. All processing happens locally in your browser.</p>
             </div>
             <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant hover:shadow-lg transition-all duration-300">
-              <div class="bg-secondary-container rounded-xl w-12 h-12 flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">bolt</span></div>
-              <h3 class="text-[20px] font-bold leading-[28px] mb-3">Lightning Fast</h3>
-              <p class="text-[15px] leading-[22px] text-on-surface-variant">Client-side processing avoids internet upload latency. Compress multiple photos in milliseconds.</p>
+              <div class="bg-secondary-container rounded-full w-12 h-12 flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">bolt</span></div>
+              <h3 class="text-[24px] font-semibold leading-[32px] mb-4">Lightning Fast</h3>
+              <p class="text-[16px] leading-[24px] text-on-surface-variant">Advanced algorithms compress your images in milliseconds, not minutes.</p>
             </div>
             <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant hover:shadow-lg transition-all duration-300">
-              <div class="bg-secondary-container rounded-xl w-12 h-12 flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">verified</span></div>
-              <h3 class="text-[20px] font-bold leading-[28px] mb-3">Custom Optimization</h3>
-              <p class="text-[15px] leading-[22px] text-on-surface-variant">Fine-tune the compression quality slider with instant real-time side-by-side visual comparison.</p>
+              <div class="bg-secondary-container rounded-full w-12 h-12 flex items-center justify-center text-primary mb-6"><span class="material-symbols-outlined">verified</span></div>
+              <h3 class="text-[24px] font-semibold leading-[32px] mb-4">Zero Loss</h3>
+              <p class="text-[16px] leading-[24px] text-on-surface-variant">Smart optimization ensures your images stay crisp and clear while being much smaller.</p>
             </div>
           </div>
         </section>
 
-        <!-- SEO Article & Guide: How to compress images -->
-        <section class="max-w-[1216px] px-margin-x-sm md:px-margin-x w-full mx-auto pt-6">
-          <div class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-8 md:p-12 space-y-6">
-            <h2 class="text-[24px] md:text-[28px] font-bold text-on-surface">How to Compress Images Online for Free</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-              <div class="space-y-2">
-                <span class="inline-block w-8 h-8 rounded-full bg-primary text-white text-center leading-8 font-bold text-[14px]">1</span>
-                <h3 class="font-bold text-[18px]">Upload Photos</h3>
-                <p class="text-[14px] text-on-surface-variant leading-[22px]">Drag and drop your JPEG, PNG, or WebP images into the upload box or click "Select Files".</p>
-              </div>
-              <div class="space-y-2">
-                <span class="inline-block w-8 h-8 rounded-full bg-primary text-white text-center leading-8 font-bold text-[14px]">2</span>
-                <h3 class="font-bold text-[18px]">Adjust Quality</h3>
-                <p class="text-[14px] text-on-surface-variant leading-[22px]">Use the quality slider to find your desired balance between file size and visual fidelity.</p>
-              </div>
-              <div class="space-y-2">
-                <span class="inline-block w-8 h-8 rounded-full bg-primary text-white text-center leading-8 font-bold text-[14px]">3</span>
-                <h3 class="font-bold text-[18px]">Instant Download</h3>
-                <p class="text-[14px] text-on-surface-variant leading-[22px]">Download your compressed image individually or click "Download All" to save time.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Bottom Ad Placement -->
-        <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x pt-2">
-          <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-1 font-semibold">Advertisement</div>
+        <!-- Ad Placement -->
+        <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x py-8">
+          <div class="text-[11px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-2 font-semibold">Advertisement</div>
           <div class="min-h-[90px] bg-surface-container-low/60 border border-outline-variant/40 rounded-xl flex items-center justify-center overflow-hidden">
             <ins class="adsbygoogle"
                  style="display:block"
@@ -222,18 +230,18 @@
 
     <!-- Preview Modal -->
     <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-[4px] bg-[rgba(27,27,36,0.6)] hidden">
-      <div class="bg-white rounded-xl shadow-2xl w-full max-w-[1024px] max-h-[90vh] overflow-auto">
+      <div class="bg-white rounded-lg shadow-2xl w-full max-w-[1024px] max-h-[90vh] overflow-auto">
         <div class="flex items-center justify-between px-6 pt-4 pb-4 border-b border-[#c7c4d8]">
-          <h3 class="text-[20px] font-semibold text-[#1b1b24] leading-[28px]">Image Comparison</h3>
-          <button id="modal-x" class="rounded-full hover:bg-gray-100 p-2 transition-colors">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 1L1 13" stroke="#1b1b24" stroke-width="2" stroke-linecap="round"/><path d="M1 1L13 13" stroke="#1b1b24" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3 class="text-[24px] font-semibold text-[#1b1b24] leading-[32px]">Image Comparison</h3>
+          <button id="modal-x" class="rounded-full hover:bg-gray-100 p-1 transition-colors">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 1L1 13" stroke="#1b1b24" stroke-width="1.5" stroke-linecap="round"/><path d="M1 1L13 13" stroke="#1b1b24" stroke-width="1.5" stroke-linecap="round"/></svg>
           </button>
         </div>
         <div class="p-6">
           <div class="flex justify-center mb-6">
             <div class="bg-[#f5f2ff] flex items-center gap-1 p-1 rounded-lg">
-              <button id="v-side" class="px-4 py-2 rounded-md text-[15px] font-medium leading-[22px] transition-all bg-white text-[#3525cd] shadow-sm">Side by Side</button>
-              <button id="v-split" class="px-4 py-2 rounded-md text-[15px] font-medium leading-[22px] transition-all text-[#444749]">Split View</button>
+              <button id="v-side" class="px-4 py-2 rounded-md text-[16px] leading-[24px] transition-all bg-white text-[#3525cd] shadow-sm">Side by Side</button>
+              <button id="v-split" class="px-4 py-2 rounded-md text-[16px] leading-[24px] transition-all text-[#444749]">Split View</button>
             </div>
           </div>
           <div id="pv-body"></div>
@@ -243,43 +251,49 @@
 
     <!-- Footer -->
     <footer class="w-full border-t border-outline-variant bg-surface-container-lowest">
-      <div class="px-margin-x-sm md:px-margin-x max-w-container-max mx-auto pt-section-padding-sm md:pt-section-padding pb-12">
+      <div class="px-margin-x-sm md:px-margin-x max-w-container-max mx-auto pt-section-padding-sm md:pt-section-padding pb-12 md:pb-16">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div class="md:col-span-5 flex flex-col gap-4">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
               </div>
               <span class="font-bold text-[22px] leading-[28px] text-primary">CutImage</span>
             </div>
-            <p class="text-[14px] leading-[22px] text-on-surface-variant max-w-[400px]">
-              Local, secure, ultra-fast image processing suite. All algorithms execute locally in your web browser — your photos never touch any server.
-            </p>
+            <p class="text-[14px] leading-[22px] text-on-surface-variant max-w-[400px]">Local, secure, fast image processing. All tools run entirely in your browser — nothing is uploaded to servers.</p>
+            <div class="flex items-center gap-3 pt-1">
+              <span class="inline-flex items-center gap-1.5 text-[12px] text-on-surface-variant/60">
+                <span class="w-2 h-2 rounded-full bg-success inline-block"></span>All systems online
+              </span>
+            </div>
           </div>
           <div class="md:col-span-4 flex flex-col gap-4">
-            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Image Tools</span>
+            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Tools</span>
             <nav class="grid grid-cols-2 gap-x-4 gap-y-2.5">
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="compress.html">Compress</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="convert.html">Convert</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="crop.html">Crop</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="resize.html">Resize</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="favicon.html">Favicon</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="trace.html">Trace (SVG)</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="faq.html">FAQ</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="compress.html">Compress</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="convert.html">Convert</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="crop.html">Crop</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="resize.html">Resize</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="favicon.html">Favicon</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="trace.html">Trace</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="faq.html">FAQ</a>
             </nav>
           </div>
           <div class="md:col-span-3 flex flex-col gap-4">
-            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Legal & Compliance</span>
+            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Legal</span>
             <nav class="flex flex-col gap-2.5">
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="terms.html">Terms of Service</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="faq.html#privacy">Security Guarantee</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="privacy.html">Privacy</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="terms.html">Terms</a>
             </nav>
           </div>
         </div>
         <div class="mt-10 md:mt-12 pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4">
           <p class="text-[13px] leading-[18px] text-on-surface-variant/60">&copy; 2026 CutImage. All rights reserved.</p>
-          <p class="text-[12px] leading-[16px] text-on-surface-variant/50">Client-Side Compression Engine</p>
+          <p class="text-[12px] leading-[16px] text-on-surface-variant/40">Made with &hearts; for the web</p>
         </div>
       </div>
     </footer>
