@@ -1,0 +1,20 @@
+{
+  "name": "CutImage - Free Image Processing Suite",
+  "short_name": "CutImage",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32 16x16",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#3525cd",
+  "background_color": "#fcf8ff",
+  "display": "standalone",
+  "start_url": "/"
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="apple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#3525cd"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#apple-grad)"/>
+  <rect x="35" y="35" width="110" height="110" rx="20" fill="none" stroke="#ffffff" stroke-width="10"/>
+  <circle cx="68" cy="68" r="12" fill="#ffffff"/>
+  <polyline points="145 115 110 80 45 145" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

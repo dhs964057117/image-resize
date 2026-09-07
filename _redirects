@@ -1,0 +1,10 @@
+# Cloudflare Pages Clean URLs and Redirects
+/compress    /compress.html    200
+/convert     /convert.html     200
+/crop        /crop.html        200
+/resize      /resize.html      200
+/favicon     /favicon.html     200
+/trace       /trace.html       200
+/faq         /faq.html         200
+/privacy     /privacy.html     200
+/terms       /terms.html       200

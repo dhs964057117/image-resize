@@ -1,0 +1,6 @@
+# Robots.txt for CutImage
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://imageresize.dev/sitemap.xml
