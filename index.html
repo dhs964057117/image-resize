@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>CutImage - Free Online Image Tools | Compress, Convert, Resize & Vectorize</title>
-  <meta name="description" content="100% Private, Client-Side Image Tools. Compress JPEG, PNG & WebP, convert formats, crop photos, bulk resize images, generate multi-size favicons, and trace vector SVG entirely in your browser."/>
+  <meta name="description" content="Local, Secure, Fast Image Processing. Compress JPEG, PNG & WebP, convert formats, crop photos, bulk resize images, generate multi-size favicons, and trace vector SVG entirely in your browser with zero server uploads."/>
   <meta name="keywords" content="image compressor, convert image, crop image online, bulk image resizer, favicon generator, image to svg, client-side image editor, private image tools, free web image processor"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://imageresize.dev/"/>
@@ -12,7 +12,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://imageresize.dev/"/>
-  <meta property="og:title" content="CutImage - Free Online Image Tools | Compress, Convert, Resize & Vectorize"/>
+  <meta property="og:title" content="CutImage - Free Online Image Tools"/>
   <meta property="og:description" content="Process images 100% locally in your browser. Zero server uploads, maximum privacy, lightning-fast execution."/>
   <meta property="og:image" content="https://imageresize.dev/images/hero-illustration.svg"/>
   <meta property="og:site_name" content="CutImage"/>
@@ -24,9 +24,12 @@
   <meta name="twitter:description" content="High performance client-side image optimization suite. Compress, convert, crop, resize, and vectorize images securely."/>
   <meta name="twitter:image" content="https://imageresize.dev/images/hero-illustration.svg"/>
 
-  <!-- Icons -->
+  <!-- Icons & Manifest -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
-  <link rel="apple-touch-icon" href="apple-touch-icon.svg" type="image/svg+xml"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
 
   <!-- Styles & Fonts -->
   <link rel="stylesheet" href="css/styles.css"/>
@@ -79,27 +82,19 @@
     <header class="w-full top-0 sticky bg-surface-bright border-b border-outline-variant z-50 safe-area-top">
       <nav class="flex justify-between items-center h-20 px-margin-x-sm md:px-margin-x max-w-container-max mx-auto">
         <div class="flex items-center gap-stack-lg">
-          <a class="font-bold text-[24px] leading-[32px] shrink-0 text-primary flex items-center gap-2.5" title="CutImage - Home" href="index.html">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-              <rect width="32" height="32" rx="8" fill="#3525cd"/>
-              <rect x="6" y="6" width="20" height="20" rx="3" stroke="#ffffff" stroke-width="2"/>
-              <circle cx="11.5" cy="11.5" r="2" fill="#ffffff"/>
-              <polyline points="26 20 20 14 8 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            CutImage
-          </a>
+          <a class="font-bold text-[24px] leading-[32px] shrink-0 text-primary" title="CutImage - Home" href="index.html">CutImage</a>
           <div class="hidden md:flex items-center gap-8">
-            <a title="Compress images online" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="compress.html">Compress</a>
-            <a title="Convert image formats" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="convert.html">Convert</a>
-            <a title="Crop photos online" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="crop.html">Crop</a>
-            <a title="Resize image dimensions" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="resize.html">Resize</a>
-            <a title="Generate favicons" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="favicon.html">Favicon</a>
-            <a title="Trace bitmap to SVG" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="trace.html">Trace</a>
-            <a title="Frequently Asked Questions" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="faq.html">FAQ</a>
+            <a title="Compress images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="compress.html">Compress</a>
+            <a title="Convert images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="convert.html">Convert</a>
+            <a title="Crop images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="crop.html">Crop</a>
+            <a title="Resize images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="resize.html">Resize</a>
+            <a title="Favicon images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="favicon.html">Favicon</a>
+            <a title="Trace images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="trace.html">Trace</a>
+            <a title="FAQ images online - CutImage" class="text-[16px] leading-[24px] transition-colors text-on-surface-variant hover:text-primary" href="faq.html">FAQ</a>
           </div>
         </div>
         <div class="flex items-center gap-4">
-          <a class="bg-primary text-on-primary px-6 py-3 rounded-lg text-[14px] font-medium tracking-[0.7px] leading-[20px] hover:bg-primary-container transition-all shadow-sm" title="Get Started - Compress Images Free" href="compress.html">Get Started</a>
+          <a class="bg-primary text-on-primary px-6 py-3 rounded-lg text-[14px] font-medium tracking-[0.7px] leading-[20px] hover:bg-primary-container transition-all" title="Get Started - Compress Images Online Free" href="compress.html">Get Started</a>
           <button class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" aria-label="Open menu" aria-expanded="false">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -111,209 +106,160 @@
       </nav>
     </header>
 
-    <!-- Top Ad Placement -->
-    <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x pt-4">
-      <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-1 font-semibold">Advertisement</div>
-      <div class="min-h-[90px] bg-surface-container-low/60 border border-outline-variant/40 rounded-xl flex items-center justify-center overflow-hidden">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-             data-ad-slot="1234567890"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-      </div>
-    </div>
-
     <!-- Main Content -->
     <main class="flex-1">
-      <!-- Hero Section -->
-      <section class="relative flex flex-col items-center justify-center min-h-[520px] md:min-h-[640px] overflow-hidden px-margin-x-sm md:px-margin-x">
-        <div class="absolute inset-0 pointer-events-none opacity-40" style="background: radial-gradient(circle at 50% 30%, rgba(79,70,229,0.12) 0%, rgba(255,255,255,0) 70%);"></div>
-        
-        <div class="max-w-[820px] flex flex-col items-center gap-5 relative z-10 text-center">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-primary text-[13px] font-semibold tracking-wide">
-            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            100% In-Browser · Zero Server Uploads · Free Forever
+      <!-- SECTION 1: HERO -->
+      <section class="relative flex flex-col items-center justify-center min-h-[580px] md:min-h-[716px] overflow-hidden px-margin-x-sm md:px-margin-x">
+        <div class="absolute inset-0" style="background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox=&#x27;0 0 1280 716&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%3E%3Crect x=&#x27;0&#x27; y=&#x27;0&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27; fill=&#x27;url(%23grad)&#x27;/%3E%3Cdefs%3E%3CradialGradient id=&#x27;grad&#x27; gradientUnits=&#x27;userSpaceOnUse&#x27; cx=&#x27;50%25&#x27; cy=&#x27;50%25&#x27; r=&#x27;50%25&#x27;%3E%3Cstop stop-color=&#x27;rgba(79,70,229,0.08)&#x27; offset=&#x27;0&#x27;/%3E%3Cstop stop-color=&#x27;rgba(79,70,229,0)&#x27; offset=&#x27;0.7&#x27;/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E&quot;)"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-[96px] md:h-[128px] opacity-20 px-margin-x-sm md:px-margin-x">
+          <div class="w-full h-full border-t border-l border-r border-dashed border-primary-fixed-dim rounded-t-2xl"></div>
+        </div>
+        <div class="max-w-[768px] flex flex-col items-center gap-4 relative z-10">
+          <h1 class="text-[36px] md:text-[48px] font-bold text-on-surface tracking-[-1.2px] leading-[44px] md:leading-[56px] text-center">CutImage</h1>
+          <div class="max-w-[672px] text-center">
+            <p class="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-on-surface-variant">Local, Secure, Fast Image Processing. The professional-grade utility for creators who value privacy and performance.</p>
           </div>
-          <h1 class="text-[38px] md:text-[56px] font-extrabold text-on-surface tracking-[-1.5px] leading-[44px] md:leading-[64px]">
-            The Privacy-First <span class="text-primary">Image Processing</span> Suite
-          </h1>
-          <p class="text-[17px] md:text-[20px] leading-[26px] md:leading-[30px] text-on-surface-variant max-w-[680px]">
-            Lightning-fast, desktop-grade image tools that run completely on your machine. Compress, convert, crop, resize, and vectorize with absolute data privacy.
-          </p>
-          <div class="flex flex-wrap gap-4 items-center justify-center pt-4">
-            <a class="bg-primary text-on-primary text-[16px] leading-[24px] px-8 py-3.5 rounded-xl font-semibold hover:bg-primary-container shadow-md hover:shadow-lg transition-all" href="compress.html">
-              Start Compressing Free
-            </a>
-            <a class="bg-surface-container-low text-on-surface border border-outline-variant text-[16px] leading-[24px] px-8 py-3.5 rounded-xl font-medium hover:bg-surface-container transition-all" href="convert.html">
-              Explore All Tools
-            </a>
+          <div class="flex gap-6 items-center pt-6">
+            <a class="bg-primary-container text-on-primary text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] px-8 md:px-10 py-[12px] md:py-[14px] rounded-xl font-semibold hover:bg-primary transition-colors" href="compress.html">Launch Web App</a>
           </div>
         </div>
       </section>
 
-      <!-- Grid of Tools -->
+      <!-- SECTION 2: TOOLS GRID -->
       <section class="bg-surface-container-low px-margin-x-sm md:px-margin-x py-section-padding-sm md:py-section-padding">
-        <div class="max-w-container-max mx-auto flex flex-col gap-12">
-          <div class="text-center max-w-[700px] mx-auto">
-            <h2 class="text-[28px] md:text-[36px] font-bold text-on-surface tracking-[-0.5px] leading-[36px] md:leading-[44px]">
-              Powerful Image Tools, Zero Hassle
-            </h2>
-            <p class="text-[16px] text-on-surface-variant leading-[24px] mt-2">
-              Everything happens directly inside your web browser. No software installation, no accounts, and no file size upload bottlenecks.
-            </p>
+        <div class="max-w-container-max mx-auto flex flex-col gap-12 md:gap-16">
+          <div class="text-center">
+            <h2 class="text-[24px] md:text-[30px] font-semibold text-on-surface tracking-[-0.3px] leading-[32px] md:leading-[38px]">Powerful Tools, Zero Uploads</h2>
+            <p class="text-[16px] text-on-surface-variant leading-[24px] mt-2">Everything happens in your browser. Fast, private, and always available.</p>
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Tool 1: Compress -->
-            <a class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-7 flex flex-col gap-3 hover:shadow-xl hover:border-primary transition-all duration-200 group" href="compress.html">
-              <div class="bg-primary-fixed rounded-xl w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
-                <img alt="Compress icon" width="24" height="24" class="w-6 h-6" src="images/icon-compress.svg"/>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <!-- 1: Compress -->
+            <a class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-2 hover:shadow-lg hover:border-primary-fixed-dim transition-all duration-200 group" href="compress.html">
+              <div class="bg-primary-fixed rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+                <img alt="Compress icon" loading="lazy" width="20" height="20" class="w-5 h-5" src="images/icon-compress.svg"/>
               </div>
-              <h3 class="text-[22px] text-on-surface leading-[28px] font-semibold pt-2 group-hover:text-primary transition-colors">Compress Images</h3>
-              <p class="text-[15px] text-on-surface-variant leading-[22px]">Intelligent compression algorithms reduce JPEG, PNG, and WebP file sizes by up to 90% without visible loss in quality.</p>
-              <div class="pt-2 text-[14px] font-semibold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                Launch Compressor &rarr;
-              </div>
+              <h3 class="text-[20px] text-on-surface leading-[28px] font-semibold pt-4">Compress</h3>
+              <p class="text-[16px] text-on-surface-variant leading-[24px]">Reduce file size without sacrificing quality. Smart optimization for JPEG, PNG, and WebP.</p>
             </a>
 
-            <!-- Tool 2: Convert -->
-            <a class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-7 flex flex-col gap-3 hover:shadow-xl hover:border-primary transition-all duration-200 group" href="convert.html">
-              <div class="bg-primary-fixed rounded-xl w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
-                <img alt="Convert icon" width="24" height="24" class="w-6 h-6" src="images/icon-convert.svg"/>
+            <!-- 2: Convert -->
+            <a class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-2 hover:shadow-lg hover:border-primary-fixed-dim transition-all duration-200 group" href="convert.html">
+              <div class="bg-primary-fixed rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+                <img alt="Convert icon" loading="lazy" width="20" height="20" class="w-5 h-5" src="images/icon-convert.svg"/>
               </div>
-              <h3 class="text-[22px] text-on-surface leading-[28px] font-semibold pt-2 group-hover:text-primary transition-colors">Convert Formats</h3>
-              <p class="text-[15px] text-on-surface-variant leading-[22px]">Instantly switch between modern and legacy formats: PNG, JPEG, WebP, GIF, BMP, and AVIF with full color fidelity.</p>
-              <div class="pt-2 text-[14px] font-semibold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                Launch Converter &rarr;
-              </div>
+              <h3 class="text-[20px] text-on-surface leading-[28px] font-semibold pt-4">Convert</h3>
+              <p class="text-[16px] text-on-surface-variant leading-[24px]">Switch between formats instantly. Support for modern types including AVIF and JPEG XL.</p>
             </a>
 
-            <!-- Tool 3: Crop -->
-            <a class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-7 flex flex-col gap-3 hover:shadow-xl hover:border-primary transition-all duration-200 group" href="crop.html">
-              <div class="bg-primary-fixed rounded-xl w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
-                <img alt="Crop icon" width="24" height="24" class="w-6 h-6" src="images/icon-crop.svg"/>
+            <!-- 3: Crop -->
+            <a class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-2 hover:shadow-lg hover:border-primary-fixed-dim transition-all duration-200 group" href="crop.html">
+              <div class="bg-primary-fixed rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+                <img alt="Crop icon" loading="lazy" width="20" height="20" class="w-5 h-5" src="images/icon-crop.svg"/>
               </div>
-              <h3 class="text-[22px] text-on-surface leading-[28px] font-semibold pt-2 group-hover:text-primary transition-colors">Crop & Rotate</h3>
-              <p class="text-[15px] text-on-surface-variant leading-[22px]">Pixel-accurate interactive crop tool with standard social media presets (1:1, 16:9, 4:3, 9:16) plus 90° rotation and flipping.</p>
-              <div class="pt-2 text-[14px] font-semibold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                Launch Cropper &rarr;
-              </div>
+              <h3 class="text-[20px] text-on-surface leading-[28px] font-semibold pt-4">Crop</h3>
+              <p class="text-[16px] text-on-surface-variant leading-[24px]">Precision cropping with preset aspect ratios for social media and web standards.</p>
             </a>
 
-            <!-- Tool 4: Resize -->
-            <a class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-7 flex flex-col gap-3 hover:shadow-xl hover:border-primary transition-all duration-200 group" href="resize.html">
-              <div class="bg-primary-fixed rounded-xl w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
-                <img alt="Resize icon" width="24" height="24" class="w-6 h-6" src="images/icon-resize.svg"/>
+            <!-- 4: Resize -->
+            <a class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-2 hover:shadow-lg hover:border-primary-fixed-dim transition-all duration-200 group" href="resize.html">
+              <div class="bg-primary-fixed rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+                <img alt="Resize icon" loading="lazy" width="20" height="20" class="w-5 h-5" src="images/icon-resize.svg"/>
               </div>
-              <h3 class="text-[22px] text-on-surface leading-[28px] font-semibold pt-2 group-hover:text-primary transition-colors">Resize Dimensions</h3>
-              <p class="text-[15px] text-on-surface-variant leading-[22px]">Batch resize high-resolution images by pixel dimensions or scale percentage while maintaining perfect aspect ratios.</p>
-              <div class="pt-2 text-[14px] font-semibold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                Launch Resizer &rarr;
-              </div>
+              <h3 class="text-[20px] text-on-surface leading-[28px] font-semibold pt-4">Resize</h3>
+              <p class="text-[16px] text-on-surface-variant leading-[24px]">Bulk resize images by percentage or pixel dimension with high-quality resampling.</p>
             </a>
 
-            <!-- Tool 5: Favicon -->
-            <a class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-7 flex flex-col gap-3 hover:shadow-xl hover:border-primary transition-all duration-200 group" href="favicon.html">
-              <div class="bg-primary-fixed rounded-xl w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
-                <img alt="Favicon icon" width="24" height="24" class="w-6 h-6" src="images/icon-favicon.svg"/>
+            <!-- 5: Favicon -->
+            <a class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-2 hover:shadow-lg hover:border-primary-fixed-dim transition-all duration-200 group" href="favicon.html">
+              <div class="bg-primary-fixed rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+                <img alt="Favicon icon" loading="lazy" width="20" height="20" class="w-5 h-5" src="images/icon-favicon.svg"/>
               </div>
-              <h3 class="text-[22px] text-on-surface leading-[28px] font-semibold pt-2 group-hover:text-primary transition-colors">Favicon Generator</h3>
-              <p class="text-[15px] text-on-surface-variant leading-[22px]">Generate a production-ready package of modern favicons (16x16, 32x32, 180x180 Apple Touch, 192x192 Android) in one click.</p>
-              <div class="pt-2 text-[14px] font-semibold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                Generate Favicons &rarr;
-              </div>
+              <h3 class="text-[20px] text-on-surface leading-[28px] font-semibold pt-4">Favicon</h3>
+              <p class="text-[16px] text-on-surface-variant leading-[24px]">Generate a full suite of favicons for all platforms from a single image upload.</p>
             </a>
 
-            <!-- Tool 6: Trace -->
-            <a class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-7 flex flex-col gap-3 hover:shadow-xl hover:border-primary transition-all duration-200 group" href="trace.html">
-              <div class="bg-primary-fixed rounded-xl w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
-                <img alt="Trace icon" width="24" height="24" class="w-6 h-6" src="images/icon-trace.svg"/>
+            <!-- 6: Trace -->
+            <a class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col gap-2 hover:shadow-lg hover:border-primary-fixed-dim transition-all duration-200 group" href="trace.html">
+              <div class="bg-primary-fixed rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-primary-fixed-dim transition-colors">
+                <img alt="Trace icon" loading="lazy" width="20" height="20" class="w-5 h-5" src="images/icon-trace.svg"/>
               </div>
-              <h3 class="text-[22px] text-on-surface leading-[28px] font-semibold pt-2 group-hover:text-primary transition-colors">Vector Tracer (SVG)</h3>
-              <p class="text-[15px] text-on-surface-variant leading-[22px]">Transform raster JPG or PNG logos and icons into infinitely scalable vector graphics (SVG) with clean bezier paths.</p>
-              <div class="pt-2 text-[14px] font-semibold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                Trace to SVG &rarr;
-              </div>
+              <h3 class="text-[20px] text-on-surface leading-[28px] font-semibold pt-4">Trace</h3>
+              <p class="text-[16px] text-on-surface-variant leading-[24px]">Transform raster images into scalable vector graphics (SVG) with clean paths.</p>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- Mid-Content Ad Placement -->
-      <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x py-6">
-        <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-1 font-semibold">Advertisement</div>
-        <div class="min-h-[250px] bg-surface-container-low/60 border border-outline-variant/40 rounded-xl flex items-center justify-center overflow-hidden">
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-               data-ad-slot="2345678901"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
+      <!-- AD PLACEMENT 1 -->
+      <div class="w-full bg-surface-container-lowest py-8 border-y border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-x-sm md:px-margin-x text-center">
+          <div class="text-[11px] uppercase tracking-wider text-on-surface-variant/40 font-semibold mb-2">Advertisement</div>
+          <div class="min-h-[90px] flex items-center justify-center">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
         </div>
       </div>
 
-      <!-- Feature Highlight / Why Choose CutImage -->
+      <!-- SECTION 3: WHY CHOOSE CUTIMAGE -->
       <section class="bg-surface-bright px-margin-x-sm md:px-margin-x py-section-padding-sm md:py-section-padding">
-        <div class="max-w-container-max mx-auto flex flex-col lg:flex-row gap-12 md:gap-16 items-center">
+        <div class="max-w-container-max mx-auto flex flex-col lg:flex-row gap-12 md:gap-20 items-center">
           <div class="flex-1 w-full">
-            <div class="border border-outline-variant rounded-2xl overflow-hidden shadow-lg bg-surface-container-lowest p-6 flex items-center justify-center">
-              <img alt="CutImage Local Processing Architecture" width="560" height="420" class="w-full h-auto" src="images/hero-illustration.svg"/>
+            <div class="border border-outline-variant rounded-2xl overflow-hidden">
+              <img alt="CutImage Illustration" loading="lazy" width="560" height="566" class="w-full h-auto" src="images/hero-illustration.svg"/>
             </div>
           </div>
-
-          <div class="flex-1 flex flex-col gap-8">
-            <div>
-              <h2 class="text-[28px] md:text-[36px] font-bold text-on-surface tracking-[-0.5px] leading-[36px] md:leading-[44px]">
-                Why Professionals Choose CutImage
-              </h2>
-              <p class="text-[16px] text-on-surface-variant leading-[24px] mt-2">
-                Built from the ground up for privacy-conscious developers, designers, and creators who need fast, uncompromised media tools.
-              </p>
+          <div class="flex-1 flex flex-col gap-8 md:gap-12">
+            <h2 class="text-[24px] md:text-[30px] font-semibold text-on-surface tracking-[-0.3px] leading-[32px] md:leading-[38px]">Why Choose CutImage?</h2>
+            
+            <div class="flex gap-5 md:gap-6 items-start">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 bg-primary-fixed">
+                <img alt="Privacy First" loading="lazy" width="22" height="22" class="w-5 h-5" src="images/icon-privacy.svg"/>
+              </div>
+              <div class="flex flex-col gap-1 md:gap-2">
+                <h3 class="text-[16px] font-semibold text-on-surface leading-[24px]">Privacy First</h3>
+                <div>
+                  <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-[22px] md:leading-[24px]">Your data never leaves your device. We use Client-Side WASM technology to process everything locally in your browser. Security isn't just a feature; it's our foundation.</p>
+                </div>
+              </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <!-- Feature 1 -->
-              <div class="flex gap-4 items-start">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-primary-fixed">
-                  <img alt="Privacy First" width="22" height="22" class="w-5 h-5" src="images/icon-privacy.svg"/>
-                </div>
+            <div class="flex gap-5 md:gap-6 items-start">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 bg-info-container">
+                <img alt="No Registration" loading="lazy" width="22" height="22" class="w-5 h-5" src="images/icon-noreg.svg"/>
+              </div>
+              <div class="flex flex-col gap-1 md:gap-2">
+                <h3 class="text-[16px] font-semibold text-on-surface leading-[24px]">No Registration</h3>
                 <div>
-                  <h3 class="text-[16px] font-bold text-on-surface leading-[24px]">100% Privacy First</h3>
-                  <p class="text-[14px] text-on-surface-variant leading-[20px] mt-1">Your photos never leave your device. All computations happen in your browser via WebAssembly & Canvas.</p>
+                  <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-[22px] md:leading-[24px]">Jump right in — no account, no email, no sign-up required. Just drag, drop, and process. Your privacy starts the moment you arrive, not after you create an account.</p>
                 </div>
               </div>
+            </div>
 
-              <!-- Feature 2 -->
-              <div class="flex gap-4 items-start">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-info-container">
-                  <img alt="No Registration" width="22" height="22" class="w-5 h-5" src="images/icon-noreg.svg"/>
-                </div>
+            <div class="flex gap-5 md:gap-6 items-start">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 bg-error-container">
+                <img alt="No Watermarks" loading="lazy" width="22" height="22" class="w-5 h-5" src="images/icon-nowatermark.svg"/>
+              </div>
+              <div class="flex flex-col gap-1 md:gap-2">
+                <h3 class="text-[16px] font-semibold text-on-surface leading-[24px]">No Watermarks</h3>
                 <div>
-                  <h3 class="text-[16px] font-bold text-on-surface leading-[24px]">No Accounts or Limits</h3>
-                  <p class="text-[14px] text-on-surface-variant leading-[20px] mt-1">No email required, no sign-up popups, and no paywalls. Open the website and start working immediately.</p>
+                  <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-[22px] md:leading-[24px]">Your results are yours — completely clean and unmarked. We never add watermarks, banners, or promotional overlays to your processed images. What you get is what you need.</p>
                 </div>
               </div>
+            </div>
 
-              <!-- Feature 3 -->
-              <div class="flex gap-4 items-start">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-error-container">
-                  <img alt="No Watermarks" width="22" height="22" class="w-5 h-5" src="images/icon-nowatermark.svg"/>
-                </div>
-                <div>
-                  <h3 class="text-[16px] font-bold text-on-surface leading-[24px]">Zero Watermarks</h3>
-                  <p class="text-[14px] text-on-surface-variant leading-[20px] mt-1">Clean and professional outputs. We never append promotional text, watermarks, or branding to your exported files.</p>
-                </div>
+            <div class="flex gap-5 md:gap-6 items-start">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 bg-secondary-container">
+                <img alt="Instant Speed" loading="lazy" width="22" height="22" class="w-5 h-5" src="images/icon-speed.svg"/>
               </div>
-
-              <!-- Feature 4 -->
-              <div class="flex gap-4 items-start">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-secondary-container">
-                  <img alt="Instant Speed" width="22" height="22" class="w-5 h-5" src="images/icon-speed.svg"/>
-                </div>
+              <div class="flex flex-col gap-1 md:gap-2">
+                <h3 class="text-[16px] font-semibold text-on-surface leading-[24px]">Instant Speed</h3>
                 <div>
-                  <h3 class="text-[16px] font-bold text-on-surface leading-[24px]">Instant Speed</h3>
-                  <p class="text-[14px] text-on-surface-variant leading-[20px] mt-1">Bypass network bottlenecks. Large batches process at the speed of your hardware, with zero network upload latency.</p>
+                  <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-[22px] md:leading-[24px]">Eliminate network latency. By processing locally, we bypass upload and download times, delivering near-instant results even for large batches of high-resolution images.</p>
                 </div>
               </div>
             </div>
@@ -321,25 +267,34 @@
         </div>
       </section>
 
-      <!-- Bottom Banner Ad Placement -->
-      <div class="w-full max-w-container-max mx-auto px-margin-x-sm md:px-margin-x py-6">
-        <div class="text-[10px] uppercase tracking-wider text-on-surface-variant/40 text-center mb-1 font-semibold">Advertisement</div>
-        <div class="min-h-[90px] bg-surface-container-low/60 border border-outline-variant/40 rounded-xl flex items-center justify-center overflow-hidden">
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-               data-ad-slot="3456789012"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
+      <!-- SECTION 4: CALLOUT BANNER -->
+      <section class="bg-primary px-margin-x-sm md:px-margin-x py-10 md:py-12">
+        <div class="max-w-container-max mx-auto text-center">
+          <h2 class="text-[18px] md:text-[20px] font-semibold text-on-primary leading-[26px] md:leading-[30px] mb-2">Free &amp; Private Image Processing</h2>
+          <p class="text-[15px] md:text-[16px] text-on-primary/90 leading-[22px] md:leading-[24px]">All processing done locally. No data uploaded. Free &amp; Open Source.</p>
+        </div>
+      </section>
+
+      <!-- AD PLACEMENT 2 -->
+      <div class="w-full bg-surface-container-low py-8 border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-x-sm md:px-margin-x text-center">
+          <div class="text-[11px] uppercase tracking-wider text-on-surface-variant/40 font-semibold mb-2">Advertisement</div>
+          <div class="min-h-[90px] flex items-center justify-center">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="2345678901"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
         </div>
       </div>
     </main>
 
     <!-- Footer -->
     <footer class="w-full border-t border-outline-variant bg-surface-container-lowest">
-      <div class="px-margin-x-sm md:px-margin-x max-w-container-max mx-auto pt-section-padding-sm md:pt-section-padding pb-12">
+      <div class="px-margin-x-sm md:px-margin-x max-w-container-max mx-auto pt-section-padding-sm md:pt-section-padding pb-12 md:pb-16">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-          <!-- Brand -->
           <div class="md:col-span-5 flex flex-col gap-4">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
@@ -351,44 +306,36 @@
               </div>
               <span class="font-bold text-[22px] leading-[28px] text-primary">CutImage</span>
             </div>
-            <p class="text-[14px] leading-[22px] text-on-surface-variant max-w-[400px]">
-              Local, secure, ultra-fast image processing suite. All algorithms execute locally in your web browser — your photos never touch any server.
-            </p>
+            <p class="text-[14px] leading-[22px] text-on-surface-variant max-w-[400px]">Local, secure, fast image processing. All tools run entirely in your browser — nothing is uploaded to servers.</p>
             <div class="flex items-center gap-3 pt-1">
-              <span class="inline-flex items-center gap-1.5 text-[12px] text-on-surface-variant/70">
-                <span class="w-2 h-2 rounded-full bg-success inline-block"></span>All client engines operational
+              <span class="inline-flex items-center gap-1.5 text-[12px] text-on-surface-variant/60">
+                <span class="w-2 h-2 rounded-full bg-success inline-block"></span>All systems online
               </span>
             </div>
           </div>
-
-          <!-- Tools Links -->
           <div class="md:col-span-4 flex flex-col gap-4">
-            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Image Tools</span>
+            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Tools</span>
             <nav class="grid grid-cols-2 gap-x-4 gap-y-2.5">
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="compress.html">Compress</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="convert.html">Convert</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="crop.html">Crop</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="resize.html">Resize</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="favicon.html">Favicon</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="trace.html">Trace (SVG)</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="faq.html">FAQ</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="compress.html">Compress</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="convert.html">Convert</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="crop.html">Crop</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="resize.html">Resize</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="favicon.html">Favicon</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="trace.html">Trace</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="faq.html">FAQ</a>
             </nav>
           </div>
-
-          <!-- Legal & Info -->
           <div class="md:col-span-3 flex flex-col gap-4">
-            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Legal & Compliance</span>
+            <span class="text-[11px] font-bold text-on-surface-variant/50 tracking-[1.5px] uppercase leading-[16px]">Legal</span>
             <nav class="flex flex-col gap-2.5">
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="terms.html">Terms of Service</a>
-              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors" href="faq.html#privacy">Security Guarantee</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="privacy.html">Privacy</a>
+              <a class="text-[14px] leading-[20px] text-on-surface-variant hover:text-primary transition-colors w-fit" href="terms.html">Terms</a>
             </nav>
           </div>
         </div>
-
         <div class="mt-10 md:mt-12 pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4">
           <p class="text-[13px] leading-[18px] text-on-surface-variant/60">&copy; 2026 CutImage. All rights reserved.</p>
-          <p class="text-[12px] leading-[16px] text-on-surface-variant/50">Made with high-performance WebAssembly & Canvas</p>
+          <p class="text-[12px] leading-[16px] text-on-surface-variant/40">Made with &hearts; for the web</p>
         </div>
       </div>
     </footer>
