@@ -106,11 +106,12 @@
       { name: 'Terms of Service', url: 'terms.html' }
     ];
 
-    var currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    var currentPath = window.location.pathname.replace(/^\/|\/$/g, '').replace('.html', '') || 'index';
 
     var html = '<nav class="flex flex-col gap-3">';
     navLinks.forEach(function (link) {
-      var isActive = currentPath === link.url;
+      var linkPath = link.url.replace(/^\/|\/$/g, '').replace('.html', '');
+      var isActive = currentPath === linkPath;
       var activeClass = isActive 
         ? 'text-primary font-semibold bg-primary-fixed/40 px-3 py-2 rounded-lg' 
         : 'text-on-surface-variant hover:text-primary hover:bg-surface-container-low px-3 py-2 rounded-lg transition-colors';
